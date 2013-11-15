@@ -17,3 +17,9 @@ xcuserdata/
 
 # AppCode
 .idea
+
+#vim & such
+*.swp
+
+#CocoaPods
+Pods

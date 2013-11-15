@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06D69314A0B841E5875FC930 /* libPods-MartianNewsReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E4778E2E444F66B2A8A0D0 /* libPods-MartianNewsReader.a */; };
 		2C0EDDE417CE6E7F007B1718 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0EDDE317CE6E7F007B1718 /* Default-568h@2x.png */; };
 		DF181A39157F9D3000126FF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A38157F9D3000126FF1 /* UIKit.framework */; };
 		DF181A3B157F9D3000126FF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A3A157F9D3000126FF1 /* Foundation.framework */; };
@@ -58,6 +59,8 @@
 		DF181A76157FE6FF00126FF1 /* NYTArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleViewController.h; sourceTree = "<group>"; };
 		DF181A77157FE6FF00126FF1 /* NYTArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleViewController.m; sourceTree = "<group>"; };
 		DF56CCED15867F7A0097808B /* NYTArticleListProviderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleListProviderTests.m; sourceTree = "<group>"; };
+		E9E4778E2E444F66B2A8A0D0 /* libPods-MartianNewsReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MartianNewsReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCADB31FE564CC7BF0B98BB /* Pods-MartianNewsReader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MartianNewsReader.xcconfig"; path = "Pods/Pods-MartianNewsReader.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 				DF181A39157F9D3000126FF1 /* UIKit.framework in Frameworks */,
 				DF181A3B157F9D3000126FF1 /* Foundation.framework in Frameworks */,
 				DF181A3D157F9D3000126FF1 /* CoreGraphics.framework in Frameworks */,
+				06D69314A0B841E5875FC930 /* libPods-MartianNewsReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +96,7 @@
 				DF181A5C157F9D3100126FF1 /* MartianNewsReaderTests */,
 				DF181A37157F9D3000126FF1 /* Frameworks */,
 				DF181A35157F9D3000126FF1 /* Products */,
+				FCCADB31FE564CC7BF0B98BB /* Pods-MartianNewsReader.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +116,7 @@
 				DF181A3A157F9D3000126FF1 /* Foundation.framework */,
 				DF181A3C157F9D3000126FF1 /* CoreGraphics.framework */,
 				DF181A56157F9D3100126FF1 /* SenTestingKit.framework */,
+				E9E4778E2E444F66B2A8A0D0 /* libPods-MartianNewsReader.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF181A67157F9D3100126FF1 /* Build configuration list for PBXNativeTarget "MartianNewsReader" */;
 			buildPhases = (
+				91555B4C53F148A69AFF6BE0 /* Check Pods Manifest.lock */,
 				DF181A30157F9D3000126FF1 /* Sources */,
 				DF181A31157F9D3000126FF1 /* Frameworks */,
 				DF181A32157F9D3000126FF1 /* Resources */,
+				84DD4D9C9D004E69B6590D33 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +228,8 @@
 			mainGroup = DF181A29157F9D2E00126FF1;
 			productRefGroup = DF181A35157F9D3000126FF1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				DF181A33157F9D3000126FF1 /* MartianNewsReader */,
@@ -249,6 +259,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		84DD4D9C9D004E69B6590D33 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-MartianNewsReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91555B4C53F148A69AFF6BE0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		DF181A53157F9D3100126FF1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,6 +417,7 @@
 		};
 		DF181A68157F9D3100126FF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCCADB31FE564CC7BF0B98BB /* Pods-MartianNewsReader.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -390,6 +431,7 @@
 		};
 		DF181A69157F9D3100126FF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCCADB31FE564CC7BF0B98BB /* Pods-MartianNewsReader.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
