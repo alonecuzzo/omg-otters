@@ -8,7 +8,7 @@
 
 #import "NYTArticleTableViewController.h"
 #import "NYTArticleListProvider.h"
-#import "NYTArticleViewController.h"
+#import "NYTArticleDetailViewController.h"
 
 @interface NYTArticleTableViewController ()
 
@@ -59,7 +59,7 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NYTArticleViewController *articleViewController = [[NYTArticleViewController alloc] initWithArticle:
+    NYTArticleDetailViewController *articleViewController = [[NYTArticleDetailViewController alloc] initWithArticle:
             [self.articleListProvider articleAtIndex:[indexPath row]]];
     [self.navigationController pushViewController:articleViewController animated:YES];
 }

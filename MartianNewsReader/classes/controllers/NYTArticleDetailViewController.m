@@ -1,22 +1,22 @@
 //
-//  NYTArticleViewController.m
+//  NYTArticleDetailViewController.m
 //  MartianNewsReader
 //
 
 //  Copyright (c) 2012 The New York Times Company. All rights reserved.
 //
 
-#import "NYTArticleViewController.h"
+#import "NYTArticleDetailViewController.h"
 
-@interface NYTArticleViewController ()
+@interface NYTArticleDetailViewController ()
 
 @property(nonatomic, strong) id article;
 
 @end
 
-@implementation NYTArticleViewController
+@implementation NYTArticleDetailViewController
 
-- (NYTArticleViewController *)initWithArticle:(id)anArticle {
+- (NYTArticleDetailViewController *)initWithArticle:(id)anArticle {
     self = [super init];
     if (self) {
         self.article = anArticle;

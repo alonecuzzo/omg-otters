@@ -1,5 +1,5 @@
 //
-//  NYTArticleViewController.h
+//  NYTArticleDetailViewController.h
 //  MartianNewsReader
 //
 
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NYTArticleListProvider.h"
 
-@interface NYTArticleViewController : UIViewController
+@interface NYTArticleDetailViewController : UIViewController
 
 - (id)initWithArticle:(id)anArticle;
 
