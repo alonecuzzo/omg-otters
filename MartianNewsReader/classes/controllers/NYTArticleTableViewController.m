@@ -1,22 +1,22 @@
 //
-//  NYTArticleListController.m
+//  NYTArticleTableViewController.m
 //  MartianNewsReader
 //
 
 //  Copyright (c) 2012 The New York Times Company. All rights reserved.
 //
 
-#import "NYTArticleListController.h"
+#import "NYTArticleTableViewController.h"
 #import "NYTArticleListProvider.h"
 #import "NYTArticleViewController.h"
 
-@interface NYTArticleListController ()
+@interface NYTArticleTableViewController ()
 
 @property (nonatomic, strong) NYTArticleListProvider *articleListProvider;
 
 @end
 
-@implementation NYTArticleListController
+@implementation NYTArticleTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style {
     self = [super initWithStyle:style];

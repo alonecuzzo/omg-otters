@@ -8,7 +8,7 @@
 
 #import "NYTAppDelegate.h"
 
-#import "NYTArticleListController.h"
+#import "NYTArticleTableViewController.h"
 
 @implementation NYTAppDelegate
 
@@ -16,7 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[UINavigationController alloc] initWithRootViewController:[
-                    [NYTArticleListController alloc] initWithStyle:UITableViewStylePlain]];
+                    [NYTArticleTableViewController alloc] initWithStyle:UITableViewStylePlain]];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
