@@ -16,7 +16,8 @@
 
 @implementation NYTArticleDetailViewController
 
-- (NYTArticleDetailViewController *)initWithArticle:(id)anArticle {
+- (NYTArticleDetailViewController *)initWithArticle:(id)anArticle
+{
     self = [super init];
     if (self) {
         self.article = anArticle;
@@ -24,7 +25,8 @@
     return self;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 

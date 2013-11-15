@@ -11,17 +11,20 @@
 
 @implementation NYTArticleListProvider
 
-- (id)initWithArticles:(NSArray *)someArticles {
+- (id)initWithArticles:(NSArray *)someArticles
+{
     [NSException raise:@"NYTNotYetImplementedException" format:@""];
     return nil;
 }
 
-- (NSInteger)articleCount {
+- (NSInteger)articleCount
+{
     [NSException raise:@"NYTNotYetImplementedException" format:@""];
     return NSNotFound;
 }
 
-- (id)articleAtIndex:(NSInteger)index {
+- (id)articleAtIndex:(NSInteger)index
+{
     [NSException raise:@"NYTNotYetImplementedException" format:@""];
     return nil;
 }
