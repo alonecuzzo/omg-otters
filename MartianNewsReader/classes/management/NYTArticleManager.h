@@ -1,5 +1,5 @@
 //
-//  NYTArticleListProvider.h
+//  NYTArticleManager.h
 //  MartianNewsReader
 //
 
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NYTArticleListProvider : NSObject
+@interface NYTArticleManager : NSObject
 
 // For testing
 - (id)initWithArticles:(NSArray *)someArticles;

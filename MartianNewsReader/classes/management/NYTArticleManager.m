@@ -1,15 +1,15 @@
 //
-//  NYTArticleListProvider.m
+//  NYTArticleManager.m
 //  MartianNewsReader
 //
 
 //  Copyright (c) 2012 The New York Times Company. All rights reserved.
 //
 
-#import "NYTArticleListProvider.h"
+#import "NYTArticleManager.h"
 
 
-@implementation NYTArticleListProvider
+@implementation NYTArticleManager
 
 - (id)initWithArticles:(NSArray *)someArticles
 {

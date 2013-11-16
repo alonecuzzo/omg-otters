@@ -12,7 +12,7 @@
 		944635796A9B194DFED27C76 /* NYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 944639116685A82AC1F93CBF /* NYTAppDelegate.m */; };
 		944637387EDBF3CBF37146DC /* NYTArticleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9446350A13D55CB265C364C0 /* NYTArticleTableViewController.m */; };
 		94463AD68A982BBADB79A230 /* NYTArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944635497DA66EC429E567A6 /* NYTArticleDetailViewController.m */; };
-		94463FD1165B52E72A9D6F61 /* NYTArticleListProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463FE12F96C5C16CAAA1A2 /* NYTArticleListProvider.m */; };
+		94463FD1165B52E72A9D6F61 /* NYTArticleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463FE12F96C5C16CAAA1A2 /* NYTArticleManager.m */; };
 		DF181A39157F9D3000126FF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A38157F9D3000126FF1 /* UIKit.framework */; };
 		DF181A3B157F9D3000126FF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A3A157F9D3000126FF1 /* Foundation.framework */; };
 		DF181A3D157F9D3000126FF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A3C157F9D3000126FF1 /* CoreGraphics.framework */; };
@@ -43,9 +43,9 @@
 		944635497DA66EC429E567A6 /* NYTArticleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleDetailViewController.m; sourceTree = "<group>"; };
 		944639116685A82AC1F93CBF /* NYTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTAppDelegate.m; sourceTree = "<group>"; };
 		94463916657A96B61FE2F86C /* NYTArticleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleDetailViewController.h; sourceTree = "<group>"; };
-		944639AE33D9A16298DE8AF1 /* NYTArticleListProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleListProvider.h; sourceTree = "<group>"; };
+		944639AE33D9A16298DE8AF1 /* NYTArticleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleManager.h; sourceTree = "<group>"; };
 		94463D89E17B1136D3300ECF /* NYTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTAppDelegate.h; sourceTree = "<group>"; };
-		94463FE12F96C5C16CAAA1A2 /* NYTArticleListProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleListProvider.m; sourceTree = "<group>"; };
+		94463FE12F96C5C16CAAA1A2 /* NYTArticleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleManager.m; sourceTree = "<group>"; };
 		DF181A34157F9D3000126FF1 /* MartianNewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MartianNewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF181A38157F9D3000126FF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF181A3A157F9D3000126FF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,8 +92,8 @@
 		94463048DEEF15A09A68A417 /* management */ = {
 			isa = PBXGroup;
 			children = (
-				944639AE33D9A16298DE8AF1 /* NYTArticleListProvider.h */,
-				94463FE12F96C5C16CAAA1A2 /* NYTArticleListProvider.m */,
+				944639AE33D9A16298DE8AF1 /* NYTArticleManager.h */,
+				94463FE12F96C5C16CAAA1A2 /* NYTArticleManager.m */,
 			);
 			path = management;
 			sourceTree = "<group>";
@@ -343,7 +343,7 @@
 			files = (
 				DF181A45157F9D3000126FF1 /* main.m in Sources */,
 				944635796A9B194DFED27C76 /* NYTAppDelegate.m in Sources */,
-				94463FD1165B52E72A9D6F61 /* NYTArticleListProvider.m in Sources */,
+				94463FD1165B52E72A9D6F61 /* NYTArticleManager.m in Sources */,
 				944637387EDBF3CBF37146DC /* NYTArticleTableViewController.m in Sources */,
 				94463AD68A982BBADB79A230 /* NYTArticleDetailViewController.m in Sources */,
 			);

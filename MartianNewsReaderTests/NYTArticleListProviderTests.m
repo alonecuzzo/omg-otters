@@ -7,7 +7,7 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-#import "NYTArticleListProvider.h"
+#import "NYTArticleManager.h"
 
 @interface NYTArticleListProviderTests : SenTestCase
 
@@ -29,7 +29,7 @@
     }
   ];
 
-    NYTArticleListProvider *articleListProvider = [[NYTArticleListProvider alloc] initWithArticles:articles];
+    NYTArticleManager *articleListProvider = [[NYTArticleManager alloc] initWithArticles:articles];
     [self assertArticle:[articleListProvider articleAtIndex:0] hasMartianTitleText:@"Boinga to the Boinga!"];
     [self assertArticle:[articleListProvider articleAtIndex:0] hasMartianBodyText:@"Or if boinga boinga, boinga out The New Boinga Boinga boinga."];
 }

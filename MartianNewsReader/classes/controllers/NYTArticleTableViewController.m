@@ -7,12 +7,12 @@
 //
 
 #import "NYTArticleTableViewController.h"
-#import "NYTArticleListProvider.h"
+#import "NYTArticleManager.h"
 #import "NYTArticleDetailViewController.h"
 
 @interface NYTArticleTableViewController ()
 
-@property (nonatomic, strong) NYTArticleListProvider *articleListProvider;
+@property (nonatomic, strong) NYTArticleManager *articleListProvider;
 
 @end
 
@@ -22,7 +22,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        self.articleListProvider = [[NYTArticleListProvider alloc] init];
+        self.articleListProvider = [[NYTArticleManager alloc] init];
     }
     return self;
 }

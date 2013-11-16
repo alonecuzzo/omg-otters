@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NYTArticleListProvider.h"
+#import "NYTArticleManager.h"
 
 @interface NYTArticleDetailViewController : UIViewController
 
