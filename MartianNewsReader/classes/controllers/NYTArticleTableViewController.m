@@ -12,7 +12,7 @@
 
 @interface NYTArticleTableViewController ()
 
-@property (nonatomic, strong) NYTArticleManager *articleListProvider;
+@property (nonatomic, strong) NYTArticleManager *articleManager;
 
 @end
 
@@ -22,7 +22,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        self.articleListProvider = [[NYTArticleManager alloc] init];
+        self.articleManager = [[NYTArticleManager alloc] init];
     }
     return self;
 }
@@ -41,7 +41,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.articleListProvider articleCount];
+    return [self.articleManager articleCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -53,9 +53,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    id article = [self.articleListProvider articleAtIndex:[indexPath row]];
+    id article = [self.articleManager articleAtIndex:[indexPath row]];
 
-    [NSException raise:@"NYTNotYetImplementedException" format:@""];
+//    [NSException raise:@"NYTNotYetImplementedException" format:@""];
     
     return cell;
 }
@@ -66,7 +66,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NYTArticleDetailViewController *articleViewController = [[NYTArticleDetailViewController alloc] initWithArticle:
-            [self.articleListProvider articleAtIndex:[indexPath row]]];
+            [self.articleManager articleAtIndex:[indexPath row]]];
     [self.navigationController pushViewController:articleViewController animated:YES];
 }
 
