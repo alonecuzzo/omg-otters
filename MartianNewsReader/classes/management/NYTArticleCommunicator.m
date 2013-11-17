@@ -17,7 +17,7 @@ NSString *const kURLtoRetrieve = @"http://mobile.public.ec2.nytimes.com.s3-websi
 {
     _fetchingURL = [NSURL URLWithString:kURLtoRetrieve];
     NSArray *articlesArray = [NSArray arrayWithContentsOfURL:_fetchingURL];
-    return articlesArray.rac_sequence.signal;
+    return [articlesArray.rac_sequence.signal deliverOn:[RACScheduler scheduler]];
 }
 
 @end

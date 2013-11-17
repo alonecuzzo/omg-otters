@@ -11,6 +11,7 @@
 #import "NYTArticleDetailViewController.h"
 #import "NYTArticle.h"
 #import "NYTArticleImage.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface NYTArticleTableViewController ()
 
@@ -32,7 +33,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self refreshArticles];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    dispatch_queue_t bkgrndQueue = dispatch_queue_create("com.nytimes", 0);
+    dispatch_async(bkgrndQueue, ^{
+        [self refreshArticles];
+    });
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -72,7 +81,7 @@
     NYTArticle *article = [self.articleManager articleAtIndex:[indexPath row]];
      cell.textLabel.text = article.title;
 
-    NSLog(@"url: %@", [article.image.url absoluteString]);
+    [cell.imageView setImageWithURL:[NSURL URLWithString:[article.image.url absoluteString]]];
 
     return cell;
 }

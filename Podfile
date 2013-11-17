@@ -3,6 +3,7 @@
 
 target "MartianNewsReader" do
 pod 'ReactiveCocoa', '~> 2.1.6'
+pod 'SDWebImage', '~> 3.5'
 end
 
 target "MartianNewsReaderTests", :exclusive => true do

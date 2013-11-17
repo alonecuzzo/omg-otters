@@ -53,12 +53,12 @@
         }];
         return nil;
     }];
-    return signalToReturn;
+    return [signalToReturn deliverOn:[RACScheduler scheduler]];
 }
 
 - (NSInteger)articleCount
 {
-    return (_articles) ? [_articles count] : 0;
+    return (_articles) ? [_articles count] : 100;
 }
 
 - (NSArray *)articles
