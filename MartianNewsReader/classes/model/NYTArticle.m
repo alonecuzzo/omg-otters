@@ -5,6 +5,7 @@
 
 
 #import "NYTArticle.h"
+#import "NYTArticleImage.h"
 
 
 @implementation NYTArticle

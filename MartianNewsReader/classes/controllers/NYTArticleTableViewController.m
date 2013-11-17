@@ -10,7 +10,7 @@
 #import "NYTArticleManager.h"
 #import "NYTArticleDetailViewController.h"
 #import "NYTArticle.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "NYTArticleImage.h"
 
 @interface NYTArticleTableViewController ()
 
@@ -71,6 +71,8 @@
     
     NYTArticle *article = [self.articleManager articleAtIndex:[indexPath row]];
      cell.textLabel.text = article.title;
+
+    NSLog(@"url: %@", [article.image.url absoluteString]);
 
     return cell;
 }
