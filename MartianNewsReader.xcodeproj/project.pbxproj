@@ -12,9 +12,13 @@
 		8E869F6A183907E6004C60FF /* NYTCommunicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E869F69183907E6004C60FF /* NYTCommunicatorTests.m */; };
 		8E869F6B18390AB6004C60FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB67F4118379CC600B75BBE /* XCTest.framework */; };
 		944633407C538A9D60AD90BC /* NYTArticleCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 944636D5640FBB464CC8AC18 /* NYTArticleCommunicator.m */; };
+		944635233680A0084D91A53D /* NYTArticleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463578F4989D4ABE87603D /* NYTArticleBuilder.m */; };
 		944635796A9B194DFED27C76 /* NYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 944639116685A82AC1F93CBF /* NYTAppDelegate.m */; };
 		944637387EDBF3CBF37146DC /* NYTArticleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9446350A13D55CB265C364C0 /* NYTArticleTableViewController.m */; };
+		9446399E038D56231CCBA4F2 /* NYTArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463E62A018FFC85EBFCE15 /* NYTArticle.m */; };
 		94463AD68A982BBADB79A230 /* NYTArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944635497DA66EC429E567A6 /* NYTArticleDetailViewController.m */; };
+		94463B59050741365AC68ACE /* NYTArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463E62A018FFC85EBFCE15 /* NYTArticle.m */; };
+		94463BD6FA13F35D12A0CF14 /* NYTArticleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463578F4989D4ABE87603D /* NYTArticleBuilder.m */; };
 		94463E8E6C5310F0BE86F610 /* NYTInspectableArticleCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 944631F2F693A34C775ADD10 /* NYTInspectableArticleCommunicator.m */; };
 		94463FD1165B52E72A9D6F61 /* NYTArticleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463FE12F96C5C16CAAA1A2 /* NYTArticleManager.m */; };
 		DF181A39157F9D3000126FF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A38157F9D3000126FF1 /* UIKit.framework */; };
@@ -47,14 +51,18 @@
 		8EB67F4118379CC600B75BBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		94463111032062E84791F849 /* NYTArticleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleTableViewController.h; sourceTree = "<group>"; };
 		944631F2F693A34C775ADD10 /* NYTInspectableArticleCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTInspectableArticleCommunicator.m; sourceTree = "<group>"; };
+		944633173C9B060EE2FA3416 /* NYTArticleBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleBuilder.h; sourceTree = "<group>"; };
 		9446350A13D55CB265C364C0 /* NYTArticleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleTableViewController.m; sourceTree = "<group>"; };
 		944635497DA66EC429E567A6 /* NYTArticleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleDetailViewController.m; sourceTree = "<group>"; };
+		94463578F4989D4ABE87603D /* NYTArticleBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleBuilder.m; sourceTree = "<group>"; };
 		9446365ABDE678E73F021F4A /* NYTArticleCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleCommunicator.h; sourceTree = "<group>"; };
 		944636D5640FBB464CC8AC18 /* NYTArticleCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleCommunicator.m; sourceTree = "<group>"; };
 		944639116685A82AC1F93CBF /* NYTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTAppDelegate.m; sourceTree = "<group>"; };
 		94463916657A96B61FE2F86C /* NYTArticleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleDetailViewController.h; sourceTree = "<group>"; };
 		944639AE33D9A16298DE8AF1 /* NYTArticleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleManager.h; sourceTree = "<group>"; };
+		94463D61C5238CAE485C3A69 /* NYTArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticle.h; sourceTree = "<group>"; };
 		94463D89E17B1136D3300ECF /* NYTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTAppDelegate.h; sourceTree = "<group>"; };
+		94463E62A018FFC85EBFCE15 /* NYTArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticle.m; sourceTree = "<group>"; };
 		94463F84B356E317AC331B6F /* NYTInspectableArticleCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTInspectableArticleCommunicator.h; sourceTree = "<group>"; };
 		94463FE12F96C5C16CAAA1A2 /* NYTArticleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleManager.m; sourceTree = "<group>"; };
 		9A81D69BC08241B4A59A2599 /* libPods-MartianNewsReaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MartianNewsReaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +116,8 @@
 				94463FE12F96C5C16CAAA1A2 /* NYTArticleManager.m */,
 				944636D5640FBB464CC8AC18 /* NYTArticleCommunicator.m */,
 				9446365ABDE678E73F021F4A /* NYTArticleCommunicator.h */,
+				94463578F4989D4ABE87603D /* NYTArticleBuilder.m */,
+				944633173C9B060EE2FA3416 /* NYTArticleBuilder.h */,
 			);
 			path = management;
 			sourceTree = "<group>";
@@ -127,8 +137,18 @@
 				944637D9537777396593FD6C /* delegates */,
 				94463048DEEF15A09A68A417 /* management */,
 				94463F1E497DC5B8FA47937A /* controllers */,
+				944639B78E4E882B353145B8 /* model */,
 			);
 			path = classes;
+			sourceTree = "<group>";
+		};
+		944639B78E4E882B353145B8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				94463E62A018FFC85EBFCE15 /* NYTArticle.m */,
+				94463D61C5238CAE485C3A69 /* NYTArticle.h */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		94463F1323B9B1E769F5ED07 /* mocks */ = {
@@ -414,6 +434,8 @@
 				944637387EDBF3CBF37146DC /* NYTArticleTableViewController.m in Sources */,
 				94463AD68A982BBADB79A230 /* NYTArticleDetailViewController.m in Sources */,
 				944633407C538A9D60AD90BC /* NYTArticleCommunicator.m in Sources */,
+				9446399E038D56231CCBA4F2 /* NYTArticle.m in Sources */,
+				944635233680A0084D91A53D /* NYTArticleBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +446,8 @@
 				8E869F6A183907E6004C60FF /* NYTCommunicatorTests.m in Sources */,
 				DF56CCEE15867F7A0097808B /* NYTArticleListProviderTests.m in Sources */,
 				94463E8E6C5310F0BE86F610 /* NYTInspectableArticleCommunicator.m in Sources */,
+				94463B59050741365AC68ACE /* NYTArticle.m in Sources */,
+				94463BD6FA13F35D12A0CF14 /* NYTArticleBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +551,7 @@
 				INFOPLIST_FILE = "MartianNewsReader/MartianNewsReader-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -541,6 +566,7 @@
 				INFOPLIST_FILE = "MartianNewsReader/MartianNewsReader-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -561,6 +587,7 @@
 				INFOPLIST_FILE = "MartianNewsReaderTests/MartianNewsReaderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -581,6 +608,7 @@
 				INFOPLIST_FILE = "MartianNewsReaderTests/MartianNewsReaderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

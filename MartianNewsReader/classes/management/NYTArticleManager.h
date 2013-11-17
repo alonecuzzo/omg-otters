@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+@class NYTArticle;
 
 @interface NYTArticleManager : NSObject
 
@@ -14,6 +17,7 @@
 - (id)initWithArticles:(NSArray *)someArticles;
 
 - (NSInteger)articleCount;
-- (id)articleAtIndex:(NSInteger)index;
+- (NYTArticle *)articleAtIndex:(NSInteger)index;
+- (RACSignal *)retrieveArticles;
 
 @end

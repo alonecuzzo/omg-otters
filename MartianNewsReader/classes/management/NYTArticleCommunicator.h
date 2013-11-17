@@ -6,16 +6,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class RACSignal;
+
 
 @interface NYTArticleCommunicator : NSObject
 {
 @protected
     NSURL *_fetchingURL;
-    NSURLConnection *_fetchingConnection;
 }
 
-- (void)retrieveArticles;
-- (NSURLConnection*)currentURLConnection;
-- (void)cancelAndDiscardConnection;
+- (RACSignal *)retrieveArticles;
 
 @end

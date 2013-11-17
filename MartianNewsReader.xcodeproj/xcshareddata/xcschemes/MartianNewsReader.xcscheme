@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DF181A54157F9D3100126FF1"
-               BuildableName = "MartianNewsReaderTests.octest"
+               BuildableName = "MartianNewsReaderTests.xctest"
                BlueprintName = "MartianNewsReaderTests"
                ReferencedContainer = "container:MartianNewsReader.xcodeproj">
             </BuildableReference>
