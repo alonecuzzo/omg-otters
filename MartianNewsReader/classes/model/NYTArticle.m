@@ -8,7 +8,11 @@
 
 
 @implementation NYTArticle
-{
 
+- (id)mutableCopyWithZone:(NSZone *)zone
+{
+    NYTArticle *article = [[[self class] allocWithZone:zone] init];
+    return article;
 }
+
 @end

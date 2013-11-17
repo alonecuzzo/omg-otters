@@ -6,6 +6,10 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NYTArticle : NSObject<NSMutableCopying>
 
-@interface NYTArticle : NSObject
+@property(nonatomic) NSString *title;
+@property(nonatomic) NSString *body;
+@property(nonatomic) NSArray *images;
+
 @end

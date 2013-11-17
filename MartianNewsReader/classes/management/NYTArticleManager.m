@@ -40,13 +40,15 @@
 
 - (RACSignal *)retrieveArticles
 {
+    NSMutableArray *tmpArray = [NSMutableArray array];
     RACSignal *communicatorSignal = [_communicator retrieveArticles];
     RACSignal *signalToReturn = [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
         [communicatorSignal subscribeNext:^(NSArray *data) {
-            _articles = [_builder buildArticles:data];
+            [tmpArray addObject:data];
         } error:^(NSError *error){
             [subscriber sendError:error];
         } completed:^{
+            _articles = [_builder buildArticles:tmpArray];
             [subscriber sendCompleted];
         }];
         return nil;
@@ -56,7 +58,12 @@
 
 - (NSInteger)articleCount
 {
-    return [_articles count];
+    return (_articles) ? [_articles count] : 0;
+}
+
+- (NSArray *)articles
+{
+    return _articles;
 }
 
 - (NYTArticle *)articleAtIndex:(NSInteger)index

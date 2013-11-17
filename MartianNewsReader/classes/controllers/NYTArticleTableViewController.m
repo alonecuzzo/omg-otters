@@ -9,6 +9,8 @@
 #import "NYTArticleTableViewController.h"
 #import "NYTArticleManager.h"
 #import "NYTArticleDetailViewController.h"
+#import "NYTArticle.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface NYTArticleTableViewController ()
 
@@ -22,14 +24,28 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        self.articleManager = [[NYTArticleManager alloc] init];
+        _articleManager = [[NYTArticleManager alloc] init];
     }
     return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self refreshArticles];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)refreshArticles
+{
+    __weak id weakSelf = self;
+    [[_articleManager retrieveArticles] subscribeCompleted:^{
+        [[weakSelf tableView] reloadData];
+    }];
 }
 
 #pragma mark - Table view data source
@@ -41,8 +57,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//    return [self.articleManager articleCount];
-    return 10;
+    return [self.articleManager articleCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -54,10 +69,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    id article = [self.articleManager articleAtIndex:[indexPath row]];
+    NYTArticle *article = [self.articleManager articleAtIndex:[indexPath row]];
+     cell.textLabel.text = article.title;
 
-//    [NSException raise:@"NYTNotYetImplementedException" format:@""];
-    
     return cell;
 }
 

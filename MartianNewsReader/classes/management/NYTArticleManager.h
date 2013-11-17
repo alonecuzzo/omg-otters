@@ -17,6 +17,7 @@
 - (id)initWithArticles:(NSArray *)someArticles;
 
 - (NSInteger)articleCount;
+- (NSArray *)articles;
 - (NYTArticle *)articleAtIndex:(NSInteger)index;
 - (RACSignal *)retrieveArticles;
 
