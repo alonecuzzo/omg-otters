@@ -42,6 +42,16 @@
 {
     [_communicator retrieveArticles];
     XCTAssertNotNil([_communicator currentURLConnection], @"Communicator should create NSURLConnection when retrieving articles.");
+    [_communicator cancelAndDiscardConnection];
+}
+
+- (void)testURLConnectionIsCancelledWhenNewSearchMade
+{
+    [_communicator retrieveArticles];
+    NSURLConnection *firstConnection = [_communicator currentURLConnection];
+    [_communicator retrieveArticles];
+    XCTAssertFalse([_communicator currentURLConnection] == firstConnection, @"A fresh URLConnection should be created each time retrieveArticles is called.");
+    [_communicator cancelAndDiscardConnection];
 }
 
 

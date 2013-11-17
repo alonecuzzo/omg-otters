@@ -16,5 +16,6 @@
 
 - (void)retrieveArticles;
 - (NSURLConnection*)currentURLConnection;
+- (void)cancelAndDiscardConnection;
 
 @end
