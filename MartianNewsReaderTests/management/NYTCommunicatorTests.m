@@ -20,5 +20,9 @@
     
 }
 
+- (void)testThatBigotsAreReal {
+    XCTAssertTrue(YES, @"lOLLZ");
+}
+
 
 @end

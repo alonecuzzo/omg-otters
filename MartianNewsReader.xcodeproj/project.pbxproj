@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		06D69314A0B841E5875FC930 /* libPods-MartianNewsReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E4778E2E444F66B2A8A0D0 /* libPods-MartianNewsReader.a */; };
 		2C0EDDE417CE6E7F007B1718 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0EDDE317CE6E7F007B1718 /* Default-568h@2x.png */; };
-		8E869F6718390595004C60FF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A56157F9D3100126FF1 /* SenTestingKit.framework */; };
 		8E869F6A183907E6004C60FF /* NYTCommunicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E869F69183907E6004C60FF /* NYTCommunicatorTests.m */; };
+		8E869F6B18390AB6004C60FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB67F4118379CC600B75BBE /* XCTest.framework */; };
 		944633407C538A9D60AD90BC /* NYTArticleCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 944636D5640FBB464CC8AC18 /* NYTArticleCommunicator.m */; };
 		944635796A9B194DFED27C76 /* NYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 944639116685A82AC1F93CBF /* NYTAppDelegate.m */; };
 		944637387EDBF3CBF37146DC /* NYTArticleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9446350A13D55CB265C364C0 /* NYTArticleTableViewController.m */; };
@@ -66,7 +66,7 @@
 		DF181A42157F9D3000126FF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF181A44157F9D3000126FF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF181A46157F9D3100126FF1 /* MartianNewsReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MartianNewsReader-Prefix.pch"; sourceTree = "<group>"; };
-		DF181A55157F9D3100126FF1 /* MartianNewsReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MartianNewsReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF181A55157F9D3100126FF1 /* MartianNewsReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MartianNewsReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF181A56157F9D3100126FF1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DF181A5E157F9D3100126FF1 /* MartianNewsReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MartianNewsReaderTests-Info.plist"; sourceTree = "<group>"; };
 		DF181A60157F9D3100126FF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E869F6718390595004C60FF /* SenTestingKit.framework in Frameworks */,
+				8E869F6B18390AB6004C60FF /* XCTest.framework in Frameworks */,
 				DF5198CF159A1D1A00C25B3E /* CoreGraphics.framework in Frameworks */,
 				DF181A58157F9D3100126FF1 /* UIKit.framework in Frameworks */,
 				DF181A59157F9D3100126FF1 /* Foundation.framework in Frameworks */,
@@ -176,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				DF181A34157F9D3000126FF1 /* MartianNewsReader.app */,
-				DF181A55157F9D3100126FF1 /* MartianNewsReaderTests.octest */,
+				DF181A55157F9D3100126FF1 /* MartianNewsReaderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 			);
 			name = MartianNewsReaderTests;
 			productName = MartianNewsReaderTests;
-			productReference = DF181A55157F9D3100126FF1 /* MartianNewsReaderTests.octest */;
+			productReference = DF181A55157F9D3100126FF1 /* MartianNewsReaderTests.xctest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -561,7 +561,7 @@
 				INFOPLIST_FILE = "MartianNewsReaderTests/MartianNewsReaderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
@@ -581,7 +581,7 @@
 				INFOPLIST_FILE = "MartianNewsReaderTests/MartianNewsReaderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};

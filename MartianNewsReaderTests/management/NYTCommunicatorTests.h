@@ -6,8 +6,9 @@
 //  Copyright (c) 2013 The New York Times Company. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+//#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface NYTCommunicatorTests : SenTestCase
+@interface NYTCommunicatorTests : XCTestCase
 
 @end
