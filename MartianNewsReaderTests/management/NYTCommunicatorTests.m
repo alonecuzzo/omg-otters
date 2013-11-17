@@ -35,7 +35,7 @@
 - (void)testSearchingForArticleDataOnNYTimesAPI
 {
    [_communicator retrieveArticles];
-    XCTAssertEqualObjects([_communicator URLToFetch], @"http://mobile.public.ec2.nytimes.com.s3-website-us-east-1.amazonaws.com/candidates/content/v1/articles.plist", @"Communicator URL should equal the provided plist URL.");
+    XCTAssertEqualObjects([[_communicator URLToFetch] absoluteString], @"http://mobile.public.ec2.nytimes.com.s3-website-us-east-1.amazonaws.com/candidates/content/v1/articles.plist", @"Communicator URL should equal the provided plist URL.");
 }
 
 

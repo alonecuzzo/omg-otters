@@ -12,4 +12,7 @@
 @protected
     NSURL *_fetchingURL;
 }
+
+- (void)retrieveArticles;
+
 @end
