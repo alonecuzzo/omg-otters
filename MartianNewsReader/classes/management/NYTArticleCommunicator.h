@@ -11,8 +11,10 @@
 {
 @protected
     NSURL *_fetchingURL;
+    NSURLConnection *_fetchingConnection;
 }
 
 - (void)retrieveArticles;
+- (NSURLConnection*)currentURLConnection;
 
 @end

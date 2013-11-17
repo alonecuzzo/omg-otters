@@ -14,6 +14,17 @@ NSString *const kURLtoRetrieve = @"http://mobile.public.ec2.nytimes.com.s3-websi
 - (void)retrieveArticles
 {
     _fetchingURL = [NSURL URLWithString:kURLtoRetrieve];
+
+    NSURLRequest *request = [NSURLRequest requestWithURL:_fetchingURL];
+
+    //need to cancel and discard any current connection
+    _fetchingConnection = [NSURLConnection connectionWithRequest:request delegate:self];
 }
+
+- (NSURLConnection *)currentURLConnection
+{
+    return _fetchingConnection;
+}
+
 
 @end
