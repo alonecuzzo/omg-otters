@@ -13,19 +13,19 @@
 
 - (id)initWithArticles:(NSArray *)someArticles
 {
-    [NSException raise:@"NYTNotYetImplementedException" format:@""];
+//    [NSException raise:@"NYTNotYetImplementedException" format:@""];
     return nil;
 }
 
 - (NSInteger)articleCount
 {
-    [NSException raise:@"NYTNotYetImplementedException" format:@""];
+//    [NSException raise:@"NYTNotYetImplementedException" format:@""];
     return NSNotFound;
 }
 
 - (id)articleAtIndex:(NSInteger)index
 {
-    [NSException raise:@"NYTNotYetImplementedException" format:@""];
+//    [NSException raise:@"NYTNotYetImplementedException" format:@""];
     return nil;
 }
 @end

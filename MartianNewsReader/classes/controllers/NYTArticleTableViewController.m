@@ -18,7 +18,7 @@
 
 @implementation NYTArticleTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style i
+- (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
@@ -41,7 +41,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.articleManager articleCount];
+//    return [self.articleManager articleCount];
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

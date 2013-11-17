@@ -5,7 +5,6 @@ target "MartianNewsReader" do
 pod 'ReactiveCocoa', '~> 2.1.6'
 end
 
-target "MartianNewsReaderTests" do
-
+target "MartianNewsReaderTests", :exclusive => true do
 end
 

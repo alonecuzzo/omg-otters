@@ -9,16 +9,19 @@
 /* Begin PBXBuildFile section */
 		06D69314A0B841E5875FC930 /* libPods-MartianNewsReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E4778E2E444F66B2A8A0D0 /* libPods-MartianNewsReader.a */; };
 		2C0EDDE417CE6E7F007B1718 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0EDDE317CE6E7F007B1718 /* Default-568h@2x.png */; };
+		8E869F6718390595004C60FF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A56157F9D3100126FF1 /* SenTestingKit.framework */; };
+		8E869F6A183907E6004C60FF /* NYTCommunicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E869F69183907E6004C60FF /* NYTCommunicatorTests.m */; };
+		944633407C538A9D60AD90BC /* NYTArticleCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 944636D5640FBB464CC8AC18 /* NYTArticleCommunicator.m */; };
 		944635796A9B194DFED27C76 /* NYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 944639116685A82AC1F93CBF /* NYTAppDelegate.m */; };
 		944637387EDBF3CBF37146DC /* NYTArticleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9446350A13D55CB265C364C0 /* NYTArticleTableViewController.m */; };
 		94463AD68A982BBADB79A230 /* NYTArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944635497DA66EC429E567A6 /* NYTArticleDetailViewController.m */; };
+		94463E8E6C5310F0BE86F610 /* NYTInspectableArticleCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 944631F2F693A34C775ADD10 /* NYTInspectableArticleCommunicator.m */; };
 		94463FD1165B52E72A9D6F61 /* NYTArticleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463FE12F96C5C16CAAA1A2 /* NYTArticleManager.m */; };
 		DF181A39157F9D3000126FF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A38157F9D3000126FF1 /* UIKit.framework */; };
 		DF181A3B157F9D3000126FF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A3A157F9D3000126FF1 /* Foundation.framework */; };
 		DF181A3D157F9D3000126FF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A3C157F9D3000126FF1 /* CoreGraphics.framework */; };
 		DF181A43157F9D3000126FF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF181A41157F9D3000126FF1 /* InfoPlist.strings */; };
 		DF181A45157F9D3000126FF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF181A44157F9D3000126FF1 /* main.m */; };
-		DF181A57157F9D3100126FF1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A56157F9D3100126FF1 /* SenTestingKit.framework */; };
 		DF181A58157F9D3100126FF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A38157F9D3000126FF1 /* UIKit.framework */; };
 		DF181A59157F9D3100126FF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF181A3A157F9D3000126FF1 /* Foundation.framework */; };
 		DF181A61157F9D3100126FF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF181A5F157F9D3100126FF1 /* InfoPlist.strings */; };
@@ -38,14 +41,23 @@
 
 /* Begin PBXFileReference section */
 		2C0EDDE317CE6E7F007B1718 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		3A174B941C48408EA99A93EA /* Pods-MartianNewsReaderTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MartianNewsReaderTests.xcconfig"; path = "Pods/Pods-MartianNewsReaderTests.xcconfig"; sourceTree = "<group>"; };
+		8E869F68183907E6004C60FF /* NYTCommunicatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTCommunicatorTests.h; sourceTree = "<group>"; };
+		8E869F69183907E6004C60FF /* NYTCommunicatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTCommunicatorTests.m; sourceTree = "<group>"; };
+		8EB67F4118379CC600B75BBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		94463111032062E84791F849 /* NYTArticleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleTableViewController.h; sourceTree = "<group>"; };
+		944631F2F693A34C775ADD10 /* NYTInspectableArticleCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTInspectableArticleCommunicator.m; sourceTree = "<group>"; };
 		9446350A13D55CB265C364C0 /* NYTArticleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleTableViewController.m; sourceTree = "<group>"; };
 		944635497DA66EC429E567A6 /* NYTArticleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleDetailViewController.m; sourceTree = "<group>"; };
+		9446365ABDE678E73F021F4A /* NYTArticleCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleCommunicator.h; sourceTree = "<group>"; };
+		944636D5640FBB464CC8AC18 /* NYTArticleCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleCommunicator.m; sourceTree = "<group>"; };
 		944639116685A82AC1F93CBF /* NYTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTAppDelegate.m; sourceTree = "<group>"; };
 		94463916657A96B61FE2F86C /* NYTArticleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleDetailViewController.h; sourceTree = "<group>"; };
 		944639AE33D9A16298DE8AF1 /* NYTArticleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleManager.h; sourceTree = "<group>"; };
 		94463D89E17B1136D3300ECF /* NYTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTAppDelegate.h; sourceTree = "<group>"; };
+		94463F84B356E317AC331B6F /* NYTInspectableArticleCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTInspectableArticleCommunicator.h; sourceTree = "<group>"; };
 		94463FE12F96C5C16CAAA1A2 /* NYTArticleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleManager.m; sourceTree = "<group>"; };
+		9A81D69BC08241B4A59A2599 /* libPods-MartianNewsReaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MartianNewsReaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF181A34157F9D3000126FF1 /* MartianNewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MartianNewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF181A38157F9D3000126FF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF181A3A157F9D3000126FF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,8 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E869F6718390595004C60FF /* SenTestingKit.framework in Frameworks */,
 				DF5198CF159A1D1A00C25B3E /* CoreGraphics.framework in Frameworks */,
-				DF181A57157F9D3100126FF1 /* SenTestingKit.framework in Frameworks */,
 				DF181A58157F9D3100126FF1 /* UIKit.framework in Frameworks */,
 				DF181A59157F9D3100126FF1 /* Foundation.framework in Frameworks */,
 			);
@@ -94,6 +106,8 @@
 			children = (
 				944639AE33D9A16298DE8AF1 /* NYTArticleManager.h */,
 				94463FE12F96C5C16CAAA1A2 /* NYTArticleManager.m */,
+				944636D5640FBB464CC8AC18 /* NYTArticleCommunicator.m */,
+				9446365ABDE678E73F021F4A /* NYTArticleCommunicator.h */,
 			);
 			path = management;
 			sourceTree = "<group>";
@@ -117,6 +131,15 @@
 			path = classes;
 			sourceTree = "<group>";
 		};
+		94463F1323B9B1E769F5ED07 /* mocks */ = {
+			isa = PBXGroup;
+			children = (
+				94463F84B356E317AC331B6F /* NYTInspectableArticleCommunicator.h */,
+				944631F2F693A34C775ADD10 /* NYTInspectableArticleCommunicator.m */,
+			);
+			path = mocks;
+			sourceTree = "<group>";
+		};
 		94463F1E497DC5B8FA47937A /* controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +151,15 @@
 			path = controllers;
 			sourceTree = "<group>";
 		};
+		94463FBAFB268006A298C8E6 /* management */ = {
+			isa = PBXGroup;
+			children = (
+				8E869F68183907E6004C60FF /* NYTCommunicatorTests.h */,
+				8E869F69183907E6004C60FF /* NYTCommunicatorTests.m */,
+			);
+			path = management;
+			sourceTree = "<group>";
+		};
 		DF181A29157F9D2E00126FF1 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +168,7 @@
 				DF181A37157F9D3000126FF1 /* Frameworks */,
 				DF181A35157F9D3000126FF1 /* Products */,
 				FCCADB31FE564CC7BF0B98BB /* Pods-MartianNewsReader.xcconfig */,
+				3A174B941C48408EA99A93EA /* Pods-MartianNewsReaderTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,11 +184,13 @@
 		DF181A37157F9D3000126FF1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8EB67F4118379CC600B75BBE /* XCTest.framework */,
 				DF181A38157F9D3000126FF1 /* UIKit.framework */,
 				DF181A3A157F9D3000126FF1 /* Foundation.framework */,
 				DF181A3C157F9D3000126FF1 /* CoreGraphics.framework */,
 				DF181A56157F9D3100126FF1 /* SenTestingKit.framework */,
 				E9E4778E2E444F66B2A8A0D0 /* libPods-MartianNewsReader.a */,
+				9A81D69BC08241B4A59A2599 /* libPods-MartianNewsReaderTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,6 +221,8 @@
 			children = (
 				DF181A5D157F9D3100126FF1 /* Supporting Files */,
 				DF56CCED15867F7A0097808B /* NYTArticleListProviderTests.m */,
+				94463FBAFB268006A298C8E6 /* management */,
+				94463F1323B9B1E769F5ED07 /* mocks */,
 			);
 			path = MartianNewsReaderTests;
 			sourceTree = "<group>";
@@ -225,10 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF181A6A157F9D3100126FF1 /* Build configuration list for PBXNativeTarget "MartianNewsReaderTests" */;
 			buildPhases = (
+				5CBEB857E35649DC85A48AAA /* Check Pods Manifest.lock */,
 				DF181A50157F9D3100126FF1 /* Sources */,
 				DF181A51157F9D3100126FF1 /* Frameworks */,
 				DF181A52157F9D3100126FF1 /* Resources */,
 				DF181A53157F9D3100126FF1 /* ShellScript */,
+				ADFD95D2DDC146F3AD1C2A71 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,8 +299,6 @@
 			mainGroup = DF181A29157F9D2E00126FF1;
 			productRefGroup = DF181A35157F9D3000126FF1 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				DF181A33157F9D3000126FF1 /* MartianNewsReader */,
@@ -291,6 +328,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5CBEB857E35649DC85A48AAA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		84DD4D9C9D004E69B6590D33 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,6 +373,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		ADFD95D2DDC146F3AD1C2A71 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-MartianNewsReaderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DF181A53157F9D3100126FF1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +413,7 @@
 				94463FD1165B52E72A9D6F61 /* NYTArticleManager.m in Sources */,
 				944637387EDBF3CBF37146DC /* NYTArticleTableViewController.m in Sources */,
 				94463AD68A982BBADB79A230 /* NYTArticleDetailViewController.m in Sources */,
+				944633407C538A9D60AD90BC /* NYTArticleCommunicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +421,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E869F6A183907E6004C60FF /* NYTCommunicatorTests.m in Sources */,
 				DF56CCEE15867F7A0097808B /* NYTArticleListProviderTests.m in Sources */,
+				94463E8E6C5310F0BE86F610 /* NYTInspectableArticleCommunicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,12 +547,14 @@
 		};
 		DF181A6B157F9D3100126FF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A174B941C48408EA99A93EA /* Pods-MartianNewsReaderTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MartianNewsReader.app/MartianNewsReader";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MartianNewsReader/MartianNewsReader-Prefix.pch";
@@ -495,12 +567,14 @@
 		};
 		DF181A6C157F9D3100126FF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A174B941C48408EA99A93EA /* Pods-MartianNewsReaderTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MartianNewsReader.app/MartianNewsReader";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MartianNewsReader/MartianNewsReader-Prefix.pch";
