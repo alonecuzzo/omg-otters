@@ -10,13 +10,14 @@
 
 #import "NYTArticleTableViewController.h"
 #import "NYTTranslationManager.h"
+#import "NYTModel.h"
 
 @implementation NYTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
     [NYTTranslationManager sharedInstance];
+    [NYTModel sharedInstance];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

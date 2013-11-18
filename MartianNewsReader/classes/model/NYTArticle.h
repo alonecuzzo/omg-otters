@@ -10,6 +10,7 @@
 
 @interface NYTArticle : NSObject<NSMutableCopying>
 
+@property(assign) uint index;
 @property(nonatomic) NSString *title;
 @property(nonatomic) NSString *body;
 @property(nonatomic) NYTArticleImage *image;

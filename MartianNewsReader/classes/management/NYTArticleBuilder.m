@@ -15,8 +15,10 @@
 {
     NYTArticle *article = [[NYTArticle alloc] init];
     NSMutableArray *articlesToReturn = [NSMutableArray array];
+    uint index = 0;
     for (NSDictionary *dict in articles) {
         NYTArticle *artcpy = [article mutableCopy];
+        artcpy.index = index;
         artcpy.body = [dict objectForKey:@"body"];
         artcpy.title = [dict objectForKey:@"title"];
         NYTArticleImage *image = [[NYTArticleImage alloc] init];
@@ -32,6 +34,7 @@
 
         artcpy.image = image;
         [articlesToReturn addObject:artcpy];
+        index++;
     }
     return articlesToReturn;
 }

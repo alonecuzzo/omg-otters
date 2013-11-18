@@ -14,6 +14,8 @@
 		8E869F6B18390AB6004C60FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB67F4118379CC600B75BBE /* XCTest.framework */; };
 		8EAEC5471839823A000AA5FA /* NYTTranslationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAEC5461839823A000AA5FA /* NYTTranslationManager.m */; };
 		8EAEC5481839823A000AA5FA /* NYTTranslationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAEC5461839823A000AA5FA /* NYTTranslationManager.m */; };
+		8EAEC54B1839A1CB000AA5FA /* NYTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAEC54A1839A1CB000AA5FA /* NYTModel.m */; };
+		8EAEC54C1839A1CB000AA5FA /* NYTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAEC54A1839A1CB000AA5FA /* NYTModel.m */; };
 		944633407C538A9D60AD90BC /* NYTArticleCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 944636D5640FBB464CC8AC18 /* NYTArticleCommunicator.m */; };
 		944635233680A0084D91A53D /* NYTArticleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463578F4989D4ABE87603D /* NYTArticleBuilder.m */; };
 		944635796A9B194DFED27C76 /* NYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 944639116685A82AC1F93CBF /* NYTAppDelegate.m */; };
@@ -56,6 +58,8 @@
 		8E869F69183907E6004C60FF /* NYTCommunicatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTCommunicatorTests.m; sourceTree = "<group>"; };
 		8EAEC5451839823A000AA5FA /* NYTTranslationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTTranslationManager.h; sourceTree = "<group>"; };
 		8EAEC5461839823A000AA5FA /* NYTTranslationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTTranslationManager.m; sourceTree = "<group>"; };
+		8EAEC5491839A1CB000AA5FA /* NYTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTModel.h; sourceTree = "<group>"; };
+		8EAEC54A1839A1CB000AA5FA /* NYTModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTModel.m; sourceTree = "<group>"; };
 		8EB67F4118379CC600B75BBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		94463111032062E84791F849 /* NYTArticleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleTableViewController.h; sourceTree = "<group>"; };
 		944631F2F693A34C775ADD10 /* NYTInspectableArticleCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTInspectableArticleCommunicator.m; sourceTree = "<group>"; };
@@ -165,10 +169,12 @@
 		944639B78E4E882B353145B8 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				94463E62A018FFC85EBFCE15 /* NYTArticle.m */,
 				94463D61C5238CAE485C3A69 /* NYTArticle.h */,
-				944637A309F9BF2BA29AF421 /* NYTArticleImage.m */,
+				94463E62A018FFC85EBFCE15 /* NYTArticle.m */,
 				9446327EA01D246A5D593CC5 /* NYTArticleImage.h */,
+				944637A309F9BF2BA29AF421 /* NYTArticleImage.m */,
+				8EAEC5491839A1CB000AA5FA /* NYTModel.h */,
+				8EAEC54A1839A1CB000AA5FA /* NYTModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -455,6 +461,7 @@
 				DF181A45157F9D3000126FF1 /* main.m in Sources */,
 				944635796A9B194DFED27C76 /* NYTAppDelegate.m in Sources */,
 				94463FD1165B52E72A9D6F61 /* NYTArticleManager.m in Sources */,
+				8EAEC54B1839A1CB000AA5FA /* NYTModel.m in Sources */,
 				944637387EDBF3CBF37146DC /* NYTArticleTableViewController.m in Sources */,
 				94463AD68A982BBADB79A230 /* NYTArticleDetailViewController.m in Sources */,
 				944633407C538A9D60AD90BC /* NYTArticleCommunicator.m in Sources */,
@@ -470,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E869F6A183907E6004C60FF /* NYTCommunicatorTests.m in Sources */,
+				8EAEC54C1839A1CB000AA5FA /* NYTModel.m in Sources */,
 				DF56CCEE15867F7A0097808B /* NYTArticleListProviderTests.m in Sources */,
 				94463E8E6C5310F0BE86F610 /* NYTInspectableArticleCommunicator.m in Sources */,
 				94463B59050741365AC68ACE /* NYTArticle.m in Sources */,

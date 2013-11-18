@@ -7,6 +7,8 @@
 //
 
 #import "NYTTranslationManager.h"
+#import "NYTModel.h"
+#import "NYTArticle.h"
 
 NSString *const kIsMartianString = @"isMartian";
 
@@ -40,7 +42,7 @@ NSString *const kIsMartianString = @"isMartian";
     [defaults synchronize];
 }
 
-- (NSString*)translateText:(NSString*)text
+- (NSString*)translateText:(NSString*)text forIndex:(uint)index andType:(NYTLabelType)labelType
 {
     NSString *returnText = text;
     if (![[NYTTranslationManager sharedInstance] isMartian]) {
@@ -56,7 +58,6 @@ NSString *const kIsMartianString = @"isMartian";
                 } else {
                     boingaString = [NSMutableString stringWithString:@"boinga"];
                 }
-                
                 if ([[NSCharacterSet symbolCharacterSet] characterIsMember:[str characterAtIndex:0]]) {
                     boingaString = [NSString stringWithFormat:@"%c%@", [str characterAtIndex:0], boingaString];
                 }
@@ -70,7 +71,20 @@ NSString *const kIsMartianString = @"isMartian";
         }
         returnText = [newStringArray componentsJoinedByString:@" "];
     } else {
-        
+        NSArray *articles = [[[NYTTranslationManager sharedInstance] articleManager] articles];
+        NYTArticle *article = (NYTArticle*)[articles objectAtIndex:index];
+        switch (labelType) {
+            case NYTLabelTypeTitle:
+                returnText = article.title;
+                break;
+                
+            case NYTLableTypeBody:
+                returnText = article.body;
+                break;
+                
+            default:
+                break;
+        }
     }
     return returnText;
 }

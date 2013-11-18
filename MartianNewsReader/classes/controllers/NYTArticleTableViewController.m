@@ -11,6 +11,7 @@
 #import "NYTArticleDetailViewController.h"
 #import "NYTArticle.h"
 #import "NYTArticleImage.h"
+#import "NYTTranslationManager.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface NYTArticleTableViewController ()
@@ -26,6 +27,7 @@
     self = [super initWithStyle:style];
     if (self) {
         _articleManager = [[NYTArticleManager alloc] init];
+        [[NYTTranslationManager sharedInstance] setArticleManager:_articleManager];
     }
     return self;
 }
@@ -42,6 +44,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self.tableView reloadData];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -79,7 +82,9 @@
     }
     
     NYTArticle *article = [self.articleManager articleAtIndex:[indexPath row]];
-     cell.textLabel.text = article.title;
+//     cell.textLabel.text = article.title;
+    
+    cell.textLabel.text = [[NYTTranslationManager sharedInstance] translateText:article.title forIndex:[indexPath row] andType:NYTLabelTypeTitle];
 
     [cell.imageView setImageWithURL:article.image.url placeholderImage:[UIImage imageNamed:@"placeholder"]];
 

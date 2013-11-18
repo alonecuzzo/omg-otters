@@ -10,10 +10,10 @@
 #import "NYTArticle.h"
 #import "NYTArticleCommunicator.h"
 #import "NYTArticleBuilder.h"
+#import "NYTModel.h"
 
 @interface NYTArticleManager()
 
-@property(nonatomic) NSArray *articles;
 @property(nonatomic) NYTArticleCommunicator *communicator;
 @property(nonatomic) NYTArticleBuilder *builder;
 
@@ -48,7 +48,7 @@
         } error:^(NSError *error){
             [subscriber sendError:error];
         } completed:^{
-            _articles = [_builder buildArticles:tmpArray];
+            [[NYTModel sharedInstance] setArticles:[_builder buildArticles:tmpArray]];
             [subscriber sendCompleted];
         }];
         return nil;
@@ -58,17 +58,17 @@
 
 - (NSInteger)articleCount
 {
-    return (_articles) ? [_articles count] : 0;
+    return ([self articles]) ? [[self articles] count] : 0;
 }
 
 - (NSArray *)articles
 {
-    return _articles;
+    return [[NYTModel sharedInstance] articles];
 }
 
 - (NYTArticle *)articleAtIndex:(NSUInteger)index
 {
-    return (NYTArticle *)[_articles objectAtIndex:index];
+    return (NYTArticle *)[[self articles] objectAtIndex:index];
 }
 
 @end
