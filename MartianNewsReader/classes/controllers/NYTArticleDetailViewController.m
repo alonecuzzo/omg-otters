@@ -41,7 +41,7 @@
         
         self.articleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, _imageView.frame.size.height + 70, self.view.frame.size.width, FLT_MAX)];
         self.articleLabel.backgroundColor = [UIColor clearColor];
-        self.articleLabel.text = [self translateText:anArticle.body forIndex:anArticle.index andType:NYTLableTypeBody];
+        self.articleLabel.text = [self translateText:anArticle.body forIndex:anArticle.index andType:NYTLabelTypeBody];
         self.articleLabel.numberOfLines = 0;
         [self.scrollView addSubview:self.articleLabel];
         [self resetArticleLabelFrame];
@@ -57,7 +57,7 @@
         rightButton.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             [[NYTTranslationManager sharedInstance] toggleMartianTranslation];
             rightButton.title = [weakSelf getTranslateButtonTitle];
-            [weakSelf articleLabel].text = [weakSelf translateText:[weakSelf articleLabel].text forIndex:[weakSelf article].index andType:NYTLableTypeBody];
+            [weakSelf articleLabel].text = [weakSelf translateText:[weakSelf articleLabel].text forIndex:[weakSelf article].index andType:NYTLabelTypeBody];
             [weakSelf titleLabel].text = [weakSelf translateText:[weakSelf titleLabel].text forIndex:[weakSelf article].index andType:NYTLabelTypeTitle];
             [weakSelf resetArticleLabelFrame];
             return [RACSignal empty];

@@ -78,7 +78,7 @@ NSString *const kIsMartianString = @"isMartian";
                 returnText = article.title;
                 break;
                 
-            case NYTLableTypeBody:
+            case NYTLabelTypeBody:
                 returnText = article.body;
                 break;
                 

@@ -11,7 +11,7 @@
 
 typedef enum : u_int8_t {
     NYTLabelTypeTitle = 0,
-    NYTLableTypeBody
+    NYTLabelTypeBody
 } NYTLabelType;
 
 @interface NYTTranslationManager : NSObject
