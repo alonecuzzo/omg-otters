@@ -58,7 +58,7 @@
 
 - (NSInteger)articleCount
 {
-    return (_articles) ? [_articles count] : 100;
+    return (_articles) ? [_articles count] : 0;
 }
 
 - (NSArray *)articles
@@ -66,7 +66,7 @@
     return _articles;
 }
 
-- (NYTArticle *)articleAtIndex:(NSInteger)index
+- (NYTArticle *)articleAtIndex:(NSUInteger)index
 {
     return (NYTArticle *)[_articles objectAtIndex:index];
 }

@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		06D69314A0B841E5875FC930 /* libPods-MartianNewsReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E4778E2E444F66B2A8A0D0 /* libPods-MartianNewsReader.a */; };
 		2C0EDDE417CE6E7F007B1718 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0EDDE317CE6E7F007B1718 /* Default-568h@2x.png */; };
+		8E3B60EF18396D7C002573D3 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B60EE18396D7C002573D3 /* placeholder.png */; };
 		8E869F6A183907E6004C60FF /* NYTCommunicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E869F69183907E6004C60FF /* NYTCommunicatorTests.m */; };
 		8E869F6B18390AB6004C60FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB67F4118379CC600B75BBE /* XCTest.framework */; };
+		8EAEC5471839823A000AA5FA /* NYTTranslationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAEC5461839823A000AA5FA /* NYTTranslationManager.m */; };
+		8EAEC5481839823A000AA5FA /* NYTTranslationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAEC5461839823A000AA5FA /* NYTTranslationManager.m */; };
 		944633407C538A9D60AD90BC /* NYTArticleCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 944636D5640FBB464CC8AC18 /* NYTArticleCommunicator.m */; };
 		944635233680A0084D91A53D /* NYTArticleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463578F4989D4ABE87603D /* NYTArticleBuilder.m */; };
 		944635796A9B194DFED27C76 /* NYTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 944639116685A82AC1F93CBF /* NYTAppDelegate.m */; };
@@ -48,8 +51,11 @@
 /* Begin PBXFileReference section */
 		2C0EDDE317CE6E7F007B1718 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		3A174B941C48408EA99A93EA /* Pods-MartianNewsReaderTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MartianNewsReaderTests.xcconfig"; path = "Pods/Pods-MartianNewsReaderTests.xcconfig"; sourceTree = "<group>"; };
+		8E3B60EE18396D7C002573D3 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = assets/placeholder.png; sourceTree = "<group>"; };
 		8E869F68183907E6004C60FF /* NYTCommunicatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTCommunicatorTests.h; sourceTree = "<group>"; };
 		8E869F69183907E6004C60FF /* NYTCommunicatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTCommunicatorTests.m; sourceTree = "<group>"; };
+		8EAEC5451839823A000AA5FA /* NYTTranslationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTTranslationManager.h; sourceTree = "<group>"; };
+		8EAEC5461839823A000AA5FA /* NYTTranslationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTTranslationManager.m; sourceTree = "<group>"; };
 		8EB67F4118379CC600B75BBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		94463111032062E84791F849 /* NYTArticleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleTableViewController.h; sourceTree = "<group>"; };
 		944631F2F693A34C775ADD10 /* NYTInspectableArticleCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTInspectableArticleCommunicator.m; sourceTree = "<group>"; };
@@ -113,15 +119,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E3B60EB18396AE7002573D3 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				8E3B60EE18396D7C002573D3 /* placeholder.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
 		94463048DEEF15A09A68A417 /* management */ = {
 			isa = PBXGroup;
 			children = (
+				944633173C9B060EE2FA3416 /* NYTArticleBuilder.h */,
+				94463578F4989D4ABE87603D /* NYTArticleBuilder.m */,
+				9446365ABDE678E73F021F4A /* NYTArticleCommunicator.h */,
+				944636D5640FBB464CC8AC18 /* NYTArticleCommunicator.m */,
 				944639AE33D9A16298DE8AF1 /* NYTArticleManager.h */,
 				94463FE12F96C5C16CAAA1A2 /* NYTArticleManager.m */,
-				944636D5640FBB464CC8AC18 /* NYTArticleCommunicator.m */,
-				9446365ABDE678E73F021F4A /* NYTArticleCommunicator.h */,
-				94463578F4989D4ABE87603D /* NYTArticleBuilder.m */,
-				944633173C9B060EE2FA3416 /* NYTArticleBuilder.h */,
+				8EAEC5451839823A000AA5FA /* NYTTranslationManager.h */,
+				8EAEC5461839823A000AA5FA /* NYTTranslationManager.m */,
 			);
 			path = management;
 			sourceTree = "<group>";
@@ -224,6 +240,7 @@
 		DF181A3E157F9D3000126FF1 /* MartianNewsReader */ = {
 			isa = PBXGroup;
 			children = (
+				8E3B60EB18396AE7002573D3 /* assets */,
 				DF181A3F157F9D3000126FF1 /* Supporting Files */,
 				2C0EDDE317CE6E7F007B1718 /* Default-568h@2x.png */,
 				94463841CCA9835486D87BA1 /* classes */,
@@ -339,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF181A43157F9D3000126FF1 /* InfoPlist.strings in Resources */,
+				8E3B60EF18396D7C002573D3 /* placeholder.png in Resources */,
 				2C0EDDE417CE6E7F007B1718 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +461,7 @@
 				9446399E038D56231CCBA4F2 /* NYTArticle.m in Sources */,
 				944635233680A0084D91A53D /* NYTArticleBuilder.m in Sources */,
 				94463F0A548468CFAA87D1FF /* NYTArticleImage.m in Sources */,
+				8EAEC5471839823A000AA5FA /* NYTTranslationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +473,7 @@
 				DF56CCEE15867F7A0097808B /* NYTArticleListProviderTests.m in Sources */,
 				94463E8E6C5310F0BE86F610 /* NYTInspectableArticleCommunicator.m in Sources */,
 				94463B59050741365AC68ACE /* NYTArticle.m in Sources */,
+				8EAEC5481839823A000AA5FA /* NYTTranslationManager.m in Sources */,
 				94463BD6FA13F35D12A0CF14 /* NYTArticleBuilder.m in Sources */,
 				94463C4C284307C7925BEA68 /* NYTArticleImage.m in Sources */,
 			);

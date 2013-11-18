@@ -33,15 +33,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    dispatch_queue_t bkgrndQueue = dispatch_queue_create("com.nytimes", 0);
+    dispatch_async(bkgrndQueue, ^{
+        [self refreshArticles];
+    });
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    dispatch_queue_t bkgrndQueue = dispatch_queue_create("com.nytimes", 0);
-    dispatch_async(bkgrndQueue, ^{
-        [self refreshArticles];
-    });
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -81,7 +81,7 @@
     NYTArticle *article = [self.articleManager articleAtIndex:[indexPath row]];
      cell.textLabel.text = article.title;
 
-    [cell.imageView setImageWithURL:[NSURL URLWithString:[article.image.url absoluteString]]];
+    [cell.imageView setImageWithURL:article.image.url placeholderImage:[UIImage imageNamed:@"placeholder"]];
 
     return cell;
 }
