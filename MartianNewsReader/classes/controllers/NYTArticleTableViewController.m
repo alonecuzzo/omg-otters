@@ -17,6 +17,7 @@
 @interface NYTArticleTableViewController ()
 
 @property (nonatomic, strong) NYTArticleManager *articleManager;
+@property (nonatomic) UIView *preloader;
 
 @end
 
@@ -35,9 +36,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    __weak id weakSelf = self;
     dispatch_queue_t bkgrndQueue = dispatch_queue_create("com.nytimes", 0);
     dispatch_async(bkgrndQueue, ^{
-        [self refreshArticles];
+        [weakSelf refreshArticles];
     });
 }
 
@@ -82,7 +84,6 @@
     }
     
     NYTArticle *article = [self.articleManager articleAtIndex:[indexPath row]];
-//     cell.textLabel.text = article.title;
     
     cell.textLabel.text = [[NYTTranslationManager sharedInstance] translateText:article.title forIndex:[indexPath row] andType:NYTLabelTypeTitle];
 
