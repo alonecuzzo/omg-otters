@@ -44,11 +44,37 @@ NSString *const kIsMartianString = @"isMartian";
 {
     NSString *returnText = text;
     if (![[NYTTranslationManager sharedInstance] isMartian]) {
-       returnText = @"LOLZ";
+        NSArray *explodedString = [text componentsSeparatedByString:@" "];
+        NSMutableArray *newStringArray = [NSMutableArray array];
+        for (NSString *str in explodedString) {
+            if ([str length] > 3) {
+                NSString *boingaString;
+                if ([[str capitalizedString] isEqualToString:str]) {
+                    boingaString = [NSMutableString stringWithString:@"Boinga"];
+                } else if ([[str uppercaseString] isEqualToString:str]) {
+                    boingaString = [NSMutableString stringWithString:@"BOINGA"];
+                } else {
+                    boingaString = [NSMutableString stringWithString:@"boinga"];
+                }
+                
+                if ([[NSCharacterSet symbolCharacterSet] characterIsMember:[str characterAtIndex:0]]) {
+                    boingaString = [NSString stringWithFormat:@"%c%@", [str characterAtIndex:0], boingaString];
+                }
+                if ([[NSCharacterSet punctuationCharacterSet] characterIsMember:[str characterAtIndex:[str length] - 1]]) {
+                    boingaString = [NSString stringWithFormat:@"%@%c", boingaString, [str characterAtIndex:[str length] - 1]];
+                }
+                [newStringArray addObject:boingaString];
+            } else {
+                [newStringArray addObject:str];
+            }
+        }
+        returnText = [newStringArray componentsJoinedByString:@" "];
     } else {
         
     }
     return returnText;
 }
+
+
 
 @end
